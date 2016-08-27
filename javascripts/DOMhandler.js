@@ -16,12 +16,12 @@ function toLanguage(selected) {
     Language.translateToSpanish(userInputArray);
   }; 
   if(selected === "German") {
-  	Language.getGerman(userInputArray);
+  	Language.translateToGerman(userInputArray);
   };
   if (selected === "French") {
-  	Language.getFrench(userInputArray);
+  	Language.translateToFrench(userInputArray);
   }; 
   if (selected === "Ethiopian") {
-  	Language.getEthiopian(userInputArray);
+  	Language.translateToEthiopian(userInputArray);
   };
 };
