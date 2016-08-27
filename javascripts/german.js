@@ -3,8 +3,8 @@ var Language = (function(makeGerman) {
   var germanObject = {
     Merry: "Frohe",
     Christmas: "Weihnachten",
-    And: "und",
-    A: "ein",
+    and: "und",
+    a: "ein",
     Happy: "glückliches",
     New: "Neues",
     Year: "Jahr"
