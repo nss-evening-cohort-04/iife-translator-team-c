@@ -1,27 +1,18 @@
 var Language = (function(makeSpanish) {
   var spanishObject = {
     Merry: "Feliz",
-    Christmas: "Navidad"
+    Christmas: "Navidad",
   };
-  var translatedUserText = [];
-  makeSpanish.getSpanish = function(userText) {
+  var translatedArray = [];
+  makeSpanish.translateToSpanish = function(userText) {
     for (var prop in spanishObject){
       for (var i = 0; i < userText.length; i++){
-        if (userText[i] === prop){
-          // console.log(spanishObject[prop]);
-          // //return spanishObject[prop]
-          var translatedUserText = spanishObject[prop];
-          console.log(translatedUserText);
-          console.log(spanishObject[prop]);
+        if (userText[i] === prop) {
+          translatedArray.push(spanishObject[prop]);
         }
       }
     }
+    Language.setLanguage(translatedArray);
   };
-  // makeSpanish.getSpanish = function(userText) {
-    
-  //   for (var prop in spanishObject){
-  //   console.log(userText.contains(spanishObject[prop]));
-  //   };
-  // };
   return makeSpanish;
 })(Language || {});
