@@ -1,9 +1,9 @@
 var Language = (function() {
-
+	var text = "test";
   return {
-    setLanguage: function(selected){
+    getLanguage: function(){
       //if (selected = "french"){
-
+      	return text;
       }
-    },
+    }
 })();
