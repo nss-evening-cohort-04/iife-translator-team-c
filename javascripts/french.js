@@ -4,9 +4,9 @@ var Language = (function(makeFrench) {
     Christmas: "Noël",
     and: "et",
     a: "une",
-    Happy: "Content",
-    New: "Nouveau",
-    Year: "An"
+    Happy: "Bonne",
+    New: "Nouvelle",
+    Year: "Annee"
   };
   var translatedArray = [];
   makeFrench.translateToFrench = function(userText) {
