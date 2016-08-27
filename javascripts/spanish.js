@@ -1,15 +1,18 @@
 var Language = (function(makeSpanish) {
   var spanishObject = {
     Merry: "Feliz",
-    Christmas: "Navidad"
+    Christmas: "Navidad",
   };
+  var translatedArray = [];
   makeSpanish.getSpanish = function(userText) {
     for (var prop in spanishObject){
       for (var i = 0; i < userText.length; i++){
-        if (userText[i] === prop)
-          var translatedUserText = spanishObject[prop];
+        if (userText[i] === prop) {
+          translatedArray.push(spanishObject[prop]);
+        }
       }
     }
+    console.log(translatedArray.join(" "));
   };
 
   return makeSpanish;
