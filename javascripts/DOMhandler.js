@@ -10,8 +10,16 @@ translateBtn.addEventListener('click', function(event) {
 function toLanguage(selected) {
   var userInput = document.getElementById("userInputText").value;
   var userInputArray = userInput.split(" ");
-  if(selected = "Spanish"){
+  if(selected === "Spanish"){
     Language.getSpanish(userInputArray);
-  }
-
+  }; 
+  if(selected === "German") {
+  	Language.getGerman(userInputArray);
+  };
+  if (selected === "French") {
+  	Language.getFrench(userInputArray);
+  }; 
+  if (selected === "Ethiopian") {
+  	Language.getEthiopian(userInputArray);
+  };
 };
