@@ -4,7 +4,7 @@ var Language = (function(makeSpanish) {
     Christmas: "Navidad",
   };
   var translatedArray = [];
-  makeSpanish.getSpanish = function(userText) {
+  makeSpanish.translateToSpanish = function(userText) {
     for (var prop in spanishObject){
       for (var i = 0; i < userText.length; i++){
         if (userText[i] === prop) {
@@ -12,8 +12,7 @@ var Language = (function(makeSpanish) {
         }
       }
     }
-    console.log(translatedArray.join(" "));
+    Language.setLanguage(translatedArray);
   };
-
   return makeSpanish;
 })(Language || {});

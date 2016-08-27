@@ -1,9 +1,12 @@
 var Language = (function() {
-	var text = "test";
+	var finalOutput = "";
   return {
-    getLanguage: function(){
-      //if (selected = "french"){
-      	return text;
-      }
+    	setLanguage: function(array){
+     	 //if (selected = "french"){
+      	finalOutput = array.join(" ");
+    	},
+    	getLanguage: function() {
+    		return finalOutput
+    	}
     }
 })();
