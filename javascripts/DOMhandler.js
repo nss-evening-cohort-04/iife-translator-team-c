@@ -1,6 +1,7 @@
 var selectLang = document.getElementById("language_selector");
 var translateBtn = document.getElementById("translate_button");
 var outputArea = document.getElementById("output");
+var playBtn = document.getElementById("play_text");
 
 translateBtn.addEventListener('click', function(event) {
   var selectLangOptions = selectLang.options[selectLang.selectedIndex];
@@ -28,3 +29,6 @@ function toLanguage(selected) {
   	Language.translateToSanta(userInputArray);
   };
 };
+playBtn.addEventListener('click', function(event) {
+	responsiveVoice.speak(outputArea.innerHTML);
+});
