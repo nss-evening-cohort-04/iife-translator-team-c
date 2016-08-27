@@ -2,6 +2,11 @@ var Language = (function(makeEthiopian) {
   var ethiopianObject = {
     Merry: "Melkam",
     Christmas: "Gena",
+    and: "Ena",
+    a: "a",
+    Happy: "Desta",
+    New: "Addis",
+    Year: "Amet"
   };
   var translatedArray = [];
   makeEthiopian.translateToEthiopian = function(userText) {
