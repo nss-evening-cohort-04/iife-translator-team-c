@@ -14,7 +14,7 @@ function toLanguage(selected) {
   var userInputArray = userInput.split(" ");
   if(selected === "Spanish"){
     Language.translateToSpanish(userInputArray);
-  }; 
+  };
   if(selected === "German") {
   	Language.translateToGerman(userInputArray);
   };
