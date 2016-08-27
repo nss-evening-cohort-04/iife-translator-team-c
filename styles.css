@@ -13,7 +13,7 @@ h1 {
 	background-color: lightsteelblue;
 	font-size: 1.2em;
 }
-#translate_button {
+#translate_button, #play_text {
 	width: 15em;
     background-color: grey;
     border-radius: 28px;
@@ -21,6 +21,11 @@ h1 {
     color: white;
     text-shadow: 0px 1px 0px #9E9E9E;
 }
-/*#output {
-	border: 1px solid black;
-}*/
+
+.hidden {
+	display: none;
+}
+
+.visible {
+	display: initial;
+}
