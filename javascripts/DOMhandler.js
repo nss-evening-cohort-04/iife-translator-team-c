@@ -14,13 +14,13 @@ function toLanguage(selected) {
   var userInputArray = userInput.split(" ");
   if(selected === "Spanish"){
     Language.translateToSpanish(userInputArray);
-  }; 
+  };
   if(selected === "German") {
   	Language.getGerman(userInputArray);
   };
   if (selected === "French") {
-  	Language.getFrench(userInputArray);
-  }; 
+  	Language.translateToFrench(userInputArray);
+  };
   if (selected === "Ethiopian") {
   	Language.getEthiopian(userInputArray);
   };
