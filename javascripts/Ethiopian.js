@@ -1,19 +1,18 @@
 var Language = (function(makeEthiopian) {
   var ethiopianObject = {
     Merry: "Melkam",
-    Christmas: "Gena"
+    Christmas: "Gena",
   };
-  makeEthiopian.getEthiopian = function(userText) {
+  var translatedArray = [];
+  makeEthiopian.translateToEthiopian = function(userText) {
     for (var prop in ethiopianObject){
       for (var i = 0; i < userText.length; i++){
-        if (userText[i] === prop);{
-          var translatedUserText = ethiopianObject[prop];
-        
+        if (userText[i] === prop) {
+          translatedArray.push(ethiopianObject[prop]);
         }
       }
     }
-        console.log(ethiopianObject[prop]);
+    Language.setLanguage(translatedArray);
   };
-
   return makeEthiopian;
 })(Language || {});
