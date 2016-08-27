@@ -2,6 +2,11 @@ var Language = (function(makeSpanish) {
   var spanishObject = {
     Merry: "Feliz",
     Christmas: "Navidad",
+    and: "y",
+    a: "un",
+    Happy: "Feliz",
+    New: "Nuevo",
+    Year: "Año"
   };
   var translatedArray = [];
   makeSpanish.translateToSpanish = function(userText) {
