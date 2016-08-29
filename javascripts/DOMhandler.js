@@ -3,11 +3,16 @@ var translateBtn = document.getElementById("translate_button");
 var outputArea = document.getElementById("output");
 var playBtn = document.getElementById("play_text");
 
+playBtn.classList.add("hidden");
+
+
 translateBtn.addEventListener('click', function(event) {
   var selectLangOptions = selectLang.options[selectLang.selectedIndex];
   var langOptionValue = selectLangOptions.value;
   toLanguage(langOptionValue);
   outputArea.innerHTML = Language.getLanguage();
+  playBtn.classList.remove("hidden");
+  playBtn.classList.add("visible");
 });
 
 function toLanguage(selected) {
